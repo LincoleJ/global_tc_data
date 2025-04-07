@@ -1,6 +1,6 @@
 # Global Hurricane Exposure Data (1980-Now)
 
-Work in progress by Lingke Jiang, G. Brooke Anderson, Victoria D. Lynch, Xiao Wu, Robbie M. Parks
+Work in progress by Lingke Jiang, G. Brooke Anderson, Xiao Wu, Robbie M. Parks
 
 This repository generates hazard-based exposure data for second-level administrative units from historical tropical storms worldwide from IBTrACS best-track data, spanning from 1980 to the present. The code may be used to update the dataset annually with the most recent data.
 
