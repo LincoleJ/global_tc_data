@@ -1,2 +1,34 @@
 # Global Hurricane Exposure Data (1980-Now)
-This repository is for generating hazard-based exposure data for second-level administrative units for historical tropical storms globally.
+
+Work in progress by Lincole Jiang
+
+This repository is for generating hazard-based exposure data for second-level administrative units for historical tropical storms globally from 1980-now. Code may be used to update at end of each year to include most recent data.
+
+## Code (in progress)
+
+### Data preparation (data_prep) list:
+
+a_XX_prepare_XX_data - prepare XX data
+
+### Data exploration (data_exploration) list:
+
+b_XX_explore_XX_data - explore XX data
+
+### Model running (models) list:
+
+c_XX_run_XX_model - run XX model
+
+### Model processing (model_processing) list:
+
+d_XX_process_XX_model - process XX model
+
+### Model plotting (model_plotting) list:
+
+e_XX_plot_XX_model - XX
+
+## Other stuff
+
+note: please run create_folder_structure.R first to create folders which may not be there when first loaded.
+
+note: to run an R Markdown file from command line, run\
+Rscript -e "rmarkdown::render('SCRIPT_NAME.Rmd')"
