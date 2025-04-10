@@ -6,25 +6,23 @@ This repository generates hazard-based exposure data for second-level administra
 
 ## Code (in progress)
 
-### Data preparation (data_prep) list:
+### 0. Description
 
-a_XX_prepare_XX_data - prepare XX data
+Methods to calculate population centroids for each exposure year; methods to generate hurricane tracks data for each ADM2
 
-### Data exploration (data_exploration) list:
+### 1. Raw data
 
-b_XX_explore_XX_data - explore XX data
+GHSL: https://human-settlement.emergency.copernicus.eu/download.php
 
-### Model running (models) list:
+GRDI: https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-pmp-grdi-2010-2020-1.00
 
-c_XX_run_XX_model - run XX model
+ADM2: https://www.geoboundaries.org/
 
-### Model processing (model_processing) list:
+IBTrACS: https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/
 
-d_XX_process_XX_model - process XX model
+### 2. Code
 
-### Model plotting (model_plotting) list:
-
-e_XX_plot_XX_model - XX
+### 3. Processed data
 
 ## Other stuff
 
