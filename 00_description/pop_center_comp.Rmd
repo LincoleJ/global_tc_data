@@ -1,0 +1,37 @@
+---
+title: "Center of Population Computation"
+author: "Lincole"
+date: "2025-04-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Per US Census Bureau, the center of population is the point whose latitude $(\bar{\phi})$ and longitude $(\bar{\lambda})$ that satisfy the equations:
+
+$$
+\bar{\phi} = \dfrac{\sum w_i\phi_i}{\sum w_i} \;\;\;\; \bar{\lambda} = \dfrac{\sum w_i\lambda_i\cos(\phi_i \dfrac{\pi}{180})}{\sum w_i \cos(\phi_i(\dfrac{\pi}{180}))}
+$$
+
+where $\phi_i, \lambda_i,$ and $w_i$ are the latitude, longitude, and populuation attached to the basic small units of area used in the computation. 
+
+Is it fine just to compute
+
+$$
+\bar{\phi} = \dfrac{\sum w_i\phi_i}{\sum w_i} \;\;\;\; \bar{\lambda} = \dfrac{\sum w_i \lambda_i}{\sum w_i}
+$$
+Let $\phi_i, \lambda_i,$ $w_i$, be the latitude, longitude, and \textit{weighted} population in each 1-km grid cell, compute 
+$$
+\bar{\phi} = \dfrac{\sum w_i\phi_i}{\sum w_i} \;\;\;\; \bar{\lambda} = \dfrac{\sum w_i \lambda_i}{\sum w_i}
+$$
+as population center points for that particular ADM2.
+
+In particular, each $w_i$ is computed as 
+
+$$
+w_i = \gamma_i \cdot \text{population}
+$$
+
+where $\gamma_i$ is the percentage of coverage of the ADM2 in that grid cell
