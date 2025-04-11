@@ -9,7 +9,7 @@ all_admin_borders <- sf::st_read("./01_raw-data/ADM2-boundary/geoBoundariesCGAZ_
 countries <- c(unique(all_admin_borders$shapeGroup)) 
 
 #1a. generate population center for each y
-for (year in 1980:2019) {
+for (year in 1980:2020) {
   # load pop raster at each
   print(year)
   pop_raster = terra::rast(paste0("./03_processed-data/processed-pop-raster/pop_", 
